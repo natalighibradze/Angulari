@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-module-app';
+  title = 'my-app';
+
+  onCounterValueChange(value: number) {
+    console.log('Counter value changed:', value);
+  }
 }

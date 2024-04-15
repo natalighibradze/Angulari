@@ -1,0 +1,6 @@
+<mat-list>
+    <mat-list-item *ngFor="let user of userList; let i = index" [ngStyle]="{'background-color': i % 2 === 0 ? '#f9f9f9' : 'white'}">
+      <h3 mat-line>{{ user }}</h3>
+    </mat-list-item>
+  </mat-list>
+  
